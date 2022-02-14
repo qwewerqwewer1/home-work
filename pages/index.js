@@ -15,7 +15,7 @@ $("document").ready(() => {
       birthDate,
     }) =>
     `
-    <div class="people__card id='${id}'>
+    <div class="people__card" id='${id}'>
     <img class="people__photo" src="./images/user.png" alt="photo" />
     <div class="people__info-container">
       <p class="people__surname">${surname}</p>
