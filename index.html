@@ -1,16 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ru">
+  <head>
+    <!--Metas-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Title-->
     <title>Document</title>
-</head>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Ubuntu+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <!--Styles-->
+    <link rel="stylesheet" href="/vendor/normalize.css" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <!--Styles JQ UI-->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://jqueryui.com/resources/demos/style.css">
+  </head>
 
-<body>
+  <body class="body">
+    <main class="main">
+      
+      <section class="peoples__container"></section>
+    </main>
 
-</body>
-<script src="index.js"></script>
+    <section class="popup popup__add-user">
+      <div class="popup__content">
+        <form id="formAddUser" class="popup__form popup__form-add-user">
+          <h2 class="popup__title">Новый пользователь</h2>
 
+          <input
+            class="popup__input popup__input_surname"
+            placeholder="Фамилия"
+            required
+          />
+          <span class="popup__span popup__span_surname-error"></span>
+
+          <input
+            class="popup__input popup__input_name"
+            placeholder="Имя"
+            required
+          />
+          <span class="popup__span popup__span_name-error"></span>
+
+          <input
+            class="popup__input popup__input_third-name"
+            placeholder="Отчество"
+            required
+          />
+          <span class="popup__span popup__span_third-name-error"></span>
+
+          <input
+            class="popup__input popup__input_phone"
+            placeholder="Телефон"
+            required
+          />
+          <span class="popup__span popup__span_phone-error"></span>
+
+          <input
+            class="popup__input popup__input_email"
+            placeholder="E-mail"
+            required
+          />
+          <span class="popup__span popup__span_email-error"></span>
+
+          <input
+            class="popup__input popup__input_bithday"
+            placeholder="Дата рождения"
+            required
+          />
+          <span class="popup__span popup__span_bithday-error"></span>
+
+          <div class="popup__buttons_container">
+            <button
+              type="submit"
+              class="popup__button popup__button_allow popup__button_save_profile"
+            >
+              Сохранить
+            </button>
+            <button
+              type="button"
+              class="popup__button popup__button_profile-cancel"
+            >
+              Отмена
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="popup popup__edit-user">
+      <div class="popup__content">
+        <form id="formEditUser" class="popup__form popup__form-edit-user">
+          <h2 class="popup__title">Редактировать профиль</h2>
+
+          <input
+            placeholder="Фамилия"
+            class="popup__input popup__input_edit-surname"
+            required=""
+          />
+          <span class="popup__span popup__span_edit-surname-error"></span>
+
+          <input
+            placeholder="Имя"
+            class="popup__input popup__input_edit-name"
+            required=""
+          />
+          <span class="popup__span popup__span_edit-name-error"></span>
+
+          <input
+            placeholder="Отчество"
+            class="popup__input popup__input_edit-thirdname"
+            required=""
+          />
+          <span class="popup__span popup__span_edit-thirdname-error"></span>
+
+          <input
+            placeholder="Телефон"
+            class="popup__input popup__input_edit-phone"
+            required=""
+          />
+          <span class="popup__span popup__span_edit-phone-error"></span>
+
+          <input
+            placeholder="Email"
+            class="popup__input popup__input_edit-email"
+            required=""
+          />
+          <span class="popup__span popup__span_edit-email-error"></span>
+
+          <input
+            type="text"
+            id="datepicker"
+            placeholder="Дата рождения"
+            class="popup__input popup__input_edit-birthday"
+            required=""
+          />
+
+          <div class="popup__buttons_container">
+            <button
+              type="submit"
+              class="popup__button popup__button_allow popup__button_confirm-edit"
+            >
+              Редактировать
+            </button>
+            <button
+              type="button"
+              class="popup__button popup__button_edit-cancel"
+            >
+              Отмена
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="popup popup__remove-user">
+      
+        <form id="dialog" class="popup__form popup__form-remove-user">
+          <h2 class="popup__title">Удаление пользователя!</h2>
+          <div class="popup__buttons_container">
+            <button
+              type="submit"
+              class="popup__button popup__button_denied popup__button_confirm-remove"
+            >
+              Удалить
+            </button>
+          </div>
+        </form>
+      
+    </section>
+
+    <!-- <section class="popup popup__remove-user">
+      <div class="popup__content">
+        <form id="dialog" class="popup__form popup__form-remove-user">
+          <h2 class="popup__title">Удаление пользователя!</h2>
+          <div class="popup__buttons_container">
+            <button
+              type="submit"
+              class="popup__button popup__button_denied popup__button_confirm-remove"
+            >
+              Удалить
+            </button>
+            <button
+              type="button"
+              class="popup__button popup__button_remove-cancel"
+            >
+              Отмена
+            </button>
+          </div>
+        </form>
+      </div>
+    </section> -->
+  </body>
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script src="/scripts/utils.js" type="module"></script>
+  <script src="/pages/index.js" type="module"></script>
 </html>
