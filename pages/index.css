@@ -1,8 +1,16 @@
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .body {
   background: url('/images/backGr.jpg') no-repeat center center fixed;
   background-size: cover;
   padding: 10px;
-  position: relative;
   font-family: 'Inter', sans-serif, 'Ubuntu Mono', monospace;
   font-weight: 400;
 }
@@ -21,19 +29,12 @@
 
 .people__card {
   border-radius: 15px;
-  box-shadow: -1px -4px 15px 1px rgb(0 0 0); 
+  box-shadow: -1px -4px 15px 1px rgb(0 0 0);
   padding: 22px;
   max-width: 231px;
   background: rgb(35 35 35);
   background-size: cover;
   position: relative;
-}
-
-.people__card_add_user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 
 .people__card:hover{
@@ -60,7 +61,6 @@
 .buttons {
   display: flex;
   justify-content: space-around;
-
 }
 
 .button {
@@ -74,6 +74,24 @@
 
 .button:hover {
   background-color: rgba(149, 146, 146, 0.219);
+}
+
+.button_add_user {
+  margin: 15px auto 0;
+  border: none;
+  background-color: rgba(149, 146, 146, 0.219);
+  height: 50px;
+  width: 100%;
+  color: #fff;
+  font-size: 21px;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0;
+}
+
+.button_add_user:hover {
+  box-shadow: 0px 0px 5px 0px;
+  background-color: #070707b4;
 }
 
 .button__image_add {
@@ -195,4 +213,8 @@
 
 .hide {
   display: none;
+}
+
+@media screen and (max) {
+  
 }

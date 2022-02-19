@@ -1,37 +1,42 @@
-// import {users} from './utils.js'
-
-// users.forEach((user) => {
-  
-//   export const createUser = ({surname, name, thirdName, phone, email, birthDate}) => 
-//   `
-//   <div class="people__card">
-//   <img class="people__photo" src="./images/user.png" alt="photo" />
-//   <div class="people__info-container">
-//     <p class="people__surname">${surname}</p>
-//     <p class="people__name">${name}</p>
-//     <p class="people__thirdname">${thirdName}</p>
-//     <p class="people__phone">${phone}</p>
-//     <p class="people__email">${email}</p>
-//     <p class="people__birthday">${birthDate}</p>
-//   </div>
-//   <div class="buttons">
-//     <button class="button people__card_button-delete">
-//       <img
-//         class="button__image"
-//         src="/icons/delete.svg"
-//         alt="delete__pic"
-//       />
-//     </button>
-//     <button class="button people__card_button-edit">
-//       <img
-//         class="button__image"
-//         src="/icons/edit.svg"
-//         alt="edit__pic"
-//       />
-//     </button>
-//   </div>
-// </div>
-// `;
-
-// let cards = createUser(user)
-// });
+export let users = [
+  {
+    surname: 'Шастун',
+    name: 'Антон',
+    thirdname: 'Андреевич',
+    phone: '89991232323',
+    email: 'Anton@mail.ru',
+    birthdate: '19/04/1991'
+  },
+  { 
+    surname: 'Попов',
+    name: 'Арсений',
+    thirdname: 'Сергеевич',
+    phone: '8991676829',
+    email: 'Ars@gmail.com',
+    birthdate: '20/03/1983',
+  },
+  { 
+    surname: 'Позов',
+    name: 'Дмитрий',
+    thirdname: 'Темурович',
+    phone: '89145553535',
+    email: 'kto-to@mail.ru',
+    birthdate: '13/06/1993',
+  },
+  { 
+    surname: 'Матвиенко',
+    name: 'Сергей',
+    thirdname: 'Борисович',
+    phone: '89928897211',
+    email: 'Mops@toje.net',
+    birthdate: '14/06/1994',
+  },
+  { 
+    surname: 'Воля',
+    name: 'Павел',
+    thirdname: 'Алексеевич',
+    phone: '89999999999',
+    email: 'Volya@mail.ru',
+    birthdate: '14/03/1976',
+  }
+]
