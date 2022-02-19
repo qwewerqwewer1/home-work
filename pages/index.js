@@ -28,14 +28,14 @@ $("document").ready(function () {
     <button class="button people__card_button-delete">
       <img
         class="button__image"
-        src="./icons/delete.svg"
+        src="../icons/delete.svg"
         alt="delete__pic"
       />
     </button>
     <button class="button people__card_button-edit">
       <img
         class="button__image"
-        src="./icons/edit.svg"
+        src="../icons/edit.svg"
         alt="edit__pic"
       />
     </button>
