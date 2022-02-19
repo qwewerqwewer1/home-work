@@ -11,7 +11,7 @@ export let users = [
     surname: 'Попов',
     name: 'Арсений',
     thirdname: 'Сергеевич',
-    phone: '8991676829',
+    phone: '89916768292',
     email: 'Ars@gmail.com',
     birthdate: '20/03/1983',
   },
