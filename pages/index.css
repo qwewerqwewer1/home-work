@@ -8,7 +8,7 @@ input::-webkit-inner-spin-button {
 }
 
 .body {
-  background: url('/images/backGr.jpg') no-repeat center center fixed;
+  background: url('../images/backGr.jpg') no-repeat center center fixed;
   background-size: cover;
   padding: 10px;
   font-family: 'Inter', sans-serif, 'Ubuntu Mono', monospace;
@@ -213,8 +213,4 @@ input::-webkit-inner-spin-button {
 
 .hide {
   display: none;
-}
-
-@media screen and (max) {
-  
 }
